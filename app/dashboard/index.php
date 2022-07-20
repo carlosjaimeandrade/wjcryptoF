@@ -1,97 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require_once('../templates/header.php') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/reset.css">
-    <link rel="stylesheet" href="../../assets/css/dashboard.css">
-    <link rel="stylesheet" href="../../assets/css/navbar.css">
-    <link rel="stylesheet" href="../../assets/css/footer.css">
-    <link rel="stylesheet" href="../../assets/lib/fontawesome-free-6.1.1-web/css/all.css">
-    <script src="../../assets/js/auth.js"></script>
-    <script src="../../assets/js/user.js"></script>
-    <title>Wjcrypto Login</title>
-</head>
-
-<body>
-    <div class="navbar">
-        <img src="../../assets/files/logo.png">
-        <div class="navbar-action">
-            <p><i class="fa-solid fa-angle-down"></i> Bem vindo <span data-name>Carlos</span></p>
-            <div class="drop-box">
-                <button><i class="fa-solid fa-person-walking-arrow-right"></i> Sair</button>
+<div class="dashboard-container">
+    <div class="dashboard-content">
+        <div class="content-operations">
+            <div class="value-content">
+                <div class="value-info">
+                    <p>Dinheiro disponível</p>
+                    <p>Conta: <span data-account></span></p>
+                </div>
+                <div class="value">
+                    <span data-value></span>
+                </div>
+            </div>
+            <div class="operations">
+                <button onclick="openDeposit()">Depositar</button>
+                <button onclick="openRetiral()" class="mr-2">Retirar</button>
+                <button onclick="openTransfer()">Transferir</button>
+            </div>
+        </div>
+        <div class="content-history">
+            <div class="history-title">
+                <div>Histórico de entrada</div>
+            </div>
+            <div class="history">
+                <p>Descrição da opeção</p>
+                <p>20/05/2022 10:24:05</p>
+            </div>
+            <div class="history">
+                <p>Descrição da opeção</p>
+                <p>20/05/2022 10:24:05</p>
             </div>
         </div>
     </div>
-
-    <div class="dashboard-container">
-        <div class="dashboard-content">
-            <div class="content-operations">
-                <div class="value-content">
-                    <div class="value-info">
-                        <p>Dinheiro disponível</p>
-                        <p>Conta: <span data-account>64894</span></p>
-                    </div>
-                    <div class="value">
-                        <span data-value>R$ 428</span> <span data-rest class="rest">53</span>
-                    </div>
-                </div>
-                <div class="operations">
-                    <button>Depositar</button>
-                    <button class="mr-2">Retirar</button>
-                    <button>Transferir</button>
-                </div>
+    <div class="dashboard-content">
+        <div class="content-history">
+            <div class="history-title">
+                <div>Histórico de saída</div>
             </div>
-            <div class="content-history">
-                <div class="history-title">
-                    <div>Histórico de entrada</div>
-                </div>
-                <div class="history">
-                    <p>Descrição da opeção</p>
-                    <p>20/05/2022 10:24:05</p>
-                </div>
-                <div class="history">
-                    <p>Descrição da opeção</p>
-                    <p>20/05/2022 10:24:05</p>
-                </div>
+            <div class="history">
+                <p>Descrição da opeção</p>
+                <p>20/05/2022 10:24:05</p>
+            </div>
+            <div class="history">
+                <p>Descrição da opeção</p>
+                <p>20/05/2022 10:24:05</p>
             </div>
         </div>
-        <div class="dashboard-content">
-            <div class="content-history">
-                <div class="history-title">
-                    <div>Histórico de saída</div>
-                </div>
-                <div class="history">
-                    <p>Descrição da opeção</p>
-                    <p>20/05/2022 10:24:05</p>
-                </div>
-                <div class="history">
-                    <p>Descrição da opeção</p>
-                    <p>20/05/2022 10:24:05</p>
-                </div>
+        <div class="content-history">
+            <div class="history-title">
+                <div>Histórico de transferencia</div>
             </div>
-            <div class="content-history">
-                <div class="history-title">
-                    <div>Histórico de transferencia</div>
-                </div>
-                <div class="history">
-                    <p>Descrição da opeção</p>
-                    <p>20/05/2022 10:24:05</p>
-                </div>
-                <div class="history">
-                    <p>Descrição da opeção</p>
-                    <p>20/05/2022 10:24:05</p>
-                </div>
+            <div class="history">
+                <p>Descrição da opeção</p>
+                <p>20/05/2022 10:24:05</p>
+            </div>
+            <div class="history">
+                <p>Descrição da opeção</p>
+                <p>20/05/2022 10:24:05</p>
             </div>
         </div>
     </div>
+</div>
 
-    <footer class="footer">
-        Desenvolvido por Carlos Jaime
-    </footer>
-</body>
+<div data-transfer class="modal-options">
+    <i class="fa-solid fa-xmark options-close"></i>
+    <div class="options">
+        <h2>Transferência</h2>
+        <div class="info-options">
+            <div class="input-border-bottom">
+            <i class="fa-solid fa-envelope"></i>
+                    <input placeholder="Informe o e-mail do recebedor" type="text" data-deposit-email></input>
+            </div>
+            <input onKeyPress="return(moeda(this,'.',',',event))" class="value-modal" placeholder="R$ 00,0" type="text">
+        </div>
+        <div class="modal-action">
+            <button class="modal-success">Transferir</button>
+            <button data-cancel >Cancelar</button>
+        </div>
+    </div>
+</div>
 
-</html>
+<div data-deposit class="modal-options">
+    <i class="fa-solid fa-xmark options-close"></i>
+    <div class="options">
+        <h2>Depositar</h2>
+        <div class="info-options">
+            <input onKeyPress="return(moeda(this,'.',',',event))" class="value-modal" placeholder="R$ 00,0" type="text">
+        </div>
+        <div class="modal-action">
+            <button class="modal-success">Retirar</button>
+            <button data-cancel >Cancelar</button>
+        </div>
+    </div>
+</div>
 
+<div data-retiral class="modal-options">
+    <i class="fa-solid fa-xmark options-close"></i>
+    <div class="options">
+        <h2>Retirada</h2>
+        <div class="info-options">
+            <input onKeyPress="return(moeda(this,'.',',',event))" class="value-modal" placeholder="R$ 00,0" type="text">
+        </div>
+        <div class="modal-action">
+            <button class="modal-success">Depositar</button>
+            <button data-cancel >Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<?php require_once('../templates/footer.php') ?>
+
+
+<script src="../../assets/js/mask.js"></script>
+<script src="../../assets/js/modalUser.js"></script>

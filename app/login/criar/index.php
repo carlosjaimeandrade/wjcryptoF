@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../assets/css/login.css">
     <link rel="stylesheet" href="../../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../../assets/css/app.css">
     <link rel="stylesheet" href="../../../assets/lib/fontawesome-free-6.1.1-web/css/all.css">
     <title>Wjcrypto Login</title>
 </head>
@@ -19,23 +20,7 @@
                 <img src="../../../assets/files/logo.png">
                 <div class="input">
                     <i class="fa-solid fa-user"></i>
-                    <input placeholder="Insira seu e-mail" required name="email" type="email">
-                </div>
-                <div class="input">
-                    <i class="fa-solid fa-user"></i>
-                    <input placeholder="Insira seu e-mail" required name="email" type="email">
-                </div>
-                <div class="input">
-                    <i class="fa-solid fa-user"></i>
-                    <input placeholder="Insira seu e-mail" required name="email" type="email">
-                </div>
-                <div class="input">
-                    <i class="fa-solid fa-user"></i>
-                    <input placeholder="Insira seu e-mail" required name="email" type="email">
-                </div>
-                <div class="input">
-                    <i class="fa-solid fa-user"></i>
-                    <input placeholder="Insira seu e-mail" required name="email" type="email">
+                    <input data-email placeholder="Insira seu e-mail" required type="email">
                 </div>
                 <button>Cadastrar</button>
             </div>
