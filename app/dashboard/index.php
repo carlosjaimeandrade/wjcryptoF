@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../assets/css/navbar.css">
     <link rel="stylesheet" href="../../assets/css/footer.css">
     <link rel="stylesheet" href="../../assets/lib/fontawesome-free-6.1.1-web/css/all.css">
+    <script src="../../assets/js/auth.js"></script>
+    <script src="../../assets/js/user.js"></script>
     <title>Wjcrypto Login</title>
 </head>
 
@@ -17,7 +19,7 @@
     <div class="navbar">
         <img src="../../assets/files/logo.png">
         <div class="navbar-action">
-            <p><i class="fa-solid fa-angle-down"></i> Bem vindo Carlos</p>
+            <p><i class="fa-solid fa-angle-down"></i> Bem vindo <span data-name>Carlos</span></p>
             <div class="drop-box">
                 <button><i class="fa-solid fa-person-walking-arrow-right"></i> Sair</button>
             </div>
@@ -30,10 +32,10 @@
                 <div class="value-content">
                     <div class="value-info">
                         <p>Dinheiro disponível</p>
-                        <p>Conta: 554751</p>
+                        <p>Conta: <span data-account>64894</span></p>
                     </div>
                     <div class="value">
-                        R$ 428 <span class="rest">53</span>
+                        <span data-value>R$ 428</span> <span data-rest class="rest">53</span>
                     </div>
                 </div>
                 <div class="operations">
@@ -92,3 +94,4 @@
 </body>
 
 </html>
+
