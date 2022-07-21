@@ -31,6 +31,19 @@
                 <p>20/05/2022 10:24:05</p>
             </div>
         </div>
+        <div class="content-history">
+            <div class="history-title">
+                <div>Histórico de login</div>
+            </div>
+            <div class="history">
+                <p>Login Realizado</p>
+                <p>20/05/2022 10:24:05</p>
+            </div>
+            <div class="history">
+                <p>Login Realizado</p>
+                <p>20/05/2022 10:24:05</p>
+            </div>
+        </div>
     </div>
     <div class="dashboard-content">
         <div class="content-history">
