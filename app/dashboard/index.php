@@ -68,14 +68,15 @@
         <h2>Transferência</h2>
         <div class="info-options">
             <div class="input-border-bottom">
-            <i class="fa-solid fa-envelope"></i>
-                    <input placeholder="Informe o e-mail do recebedor" type="text" data-deposit-email></input>
+                <i class="fa-solid fa-envelope"></i>
+                <input data-email-transfer onblur="checkUserTransfer(event)" placeholder="Informe o e-mail do recebedor" type="text" data-deposit-email></input>
             </div>
-            <input onKeyPress="return(moeda(this,'.',',',event))" class="value-modal" placeholder="R$ 00,0" type="text">
+            <input data-value-transfer onKeyPress="return(moeda(this,'.',',',event))" class="value-modal" placeholder="R$ 00,0" type="text">
+            <span data-msg-transfer class="msg-modal"></span>
         </div>
         <div class="modal-action">
-            <button class="modal-success">Transferir</button>
-            <button data-cancel >Cancelar</button>
+            <button onclick="transfer()" class="modal-success">Transferir</button>
+            <button data-cancel>Cancelar</button>
         </div>
     </div>
 </div>
@@ -85,11 +86,12 @@
     <div class="options">
         <h2>Depositar</h2>
         <div class="info-options">
-            <input onKeyPress="return(moeda(this,'.',',',event))" class="value-modal" placeholder="R$ 00,0" type="text">
+            <input data-value-deposit onKeyPress="return(moeda(this,'.',',',event))" class="value-modal" placeholder="R$ 00,0" type="text">
+            <span data-msg-deposit class="msg-modal"></span>
         </div>
         <div class="modal-action">
-            <button class="modal-success">Retirar</button>
-            <button data-cancel >Cancelar</button>
+            <button onclick="deposit()" class="modal-success">Depositar</button>
+            <button data-cancel>Cancelar</button>
         </div>
     </div>
 </div>
@@ -99,17 +101,21 @@
     <div class="options">
         <h2>Retirada</h2>
         <div class="info-options">
-            <input onKeyPress="return(moeda(this,'.',',',event))" class="value-modal" placeholder="R$ 00,0" type="text">
+            <input data-value-removal onKeyPress="return(moeda(this,'.',',',event))" class="value-modal" placeholder="R$ 00,0" type="text">
+            <span data-msg-removal class="msg-modal"></span>
         </div>
         <div class="modal-action">
-            <button class="modal-success">Depositar</button>
-            <button data-cancel >Cancelar</button>
+            <button onclick="removal()" class="modal-success">Retirar</button>
+            <button data-cancel>Cancelar</button>
         </div>
     </div>
 </div>
 
 <?php require_once('../templates/footer.php') ?>
 
-
 <script src="../../assets/js/mask.js"></script>
 <script src="../../assets/js/modalUser.js"></script>
+<script src="../../assets/js/help.js"></script>
+<script src="../../assets/js/deposit.js"></script>
+<script src="../../assets/js/removal.js"></script>
+<script src="../../assets/js/transfer.js"></script>

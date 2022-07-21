@@ -22,7 +22,7 @@
         <div class="navbar-action">
             <p><i class="fa-solid fa-angle-down"></i> Bem vindo <span data-name></span></p>
             <div class="drop-box">
-                <button><i class="fa-solid fa-person-walking-arrow-right"></i> Sair</button>
+                <button onclick="logout()"><i onclick="logout()" class="fa-solid fa-person-walking-arrow-right"></i> Sair</button>
             </div>
         </div>
     </div>
