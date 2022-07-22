@@ -54,5 +54,5 @@ async function removal() {
     clearModal('removal')
     userInfo()
     modalSuccess()
-
+    historyRemoval()
 }

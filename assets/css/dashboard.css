@@ -1,15 +1,14 @@
-body{
+body {
     background-color: #EDEDED;
 }
 
-.dashboard-container{
+.dashboard-container {
     display: flex;
     width: 100%;
-    justify-content:center;
-  
+    justify-content: center;
 }
 
-.dashboard-content > div{
+.dashboard-content>div {
     background-color: #fff;
     border-top: 1px solid rgba(177, 177, 177, 0.61);
     box-shadow: 1px 0px 30px 1px rgba(0, 0, 0, 0.158);
@@ -17,20 +16,34 @@ body{
     border-radius: 4px;
 }
 
-.content-history{
+.content-history {
     width: 350px;
     height: 350px;
+    overflow: auto;
 }
 
-.content-operations{
+.content-history::-webkit-scrollbar {
+    width: 6px;
+}
+
+.content-history::-webkit-scrollbar-track {
+    background: rgb(235, 233, 233);
+}
+
+.content-history::-webkit-scrollbar-thumb {
+    background-color: rgba(116, 116, 116, 0.377);
+    border-radius: 20px;
+}
+
+.content-operations {
     width: 350px;
     height: 150px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.value-content{
+.value-content {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -39,7 +52,8 @@ body{
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(177, 177, 177, 0.61);
 }
-.value-info{
+
+.value-info {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -49,7 +63,7 @@ body{
     font-weight: 100;
 }
 
-.value{
+.value {
     width: 100%;
     padding: 0px 20px;
     font-size: 19px;
@@ -58,11 +72,11 @@ body{
     font-weight: 600;
 }
 
-.rest{
+.rest {
     font-size: 12px;
 }
 
-.operations{
+.operations {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,19 +87,21 @@ body{
     font-weight: 100;
     padding-top: 17px;
 }
-.operations button{
-    background-color:#02408D;
+
+.operations button {
+    background-color: #02408D;
     border: none;
     color: #fff;
     padding: 7px 10px;
     border-radius: 3px;
     width: 120px;
 }
-.mr-2{
+
+.mr-2 {
     margin: 00px 10px;
 }
 
-.history-title{
+.history-title {
     border-bottom: 1px solid rgba(177, 177, 177, 0.61);
     padding: 12px 15px;
     color: rgba(29, 29, 29, 0.87);
@@ -93,7 +109,7 @@ body{
     font-size: 16px;
 }
 
-.history{
+.history {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,4 +117,3 @@ body{
     border-bottom: 1px solid rgba(114, 163, 0, 0.253);
     font-size: 13px;
 }
-

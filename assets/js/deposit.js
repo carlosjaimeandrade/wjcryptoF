@@ -45,5 +45,5 @@ async function deposit() {
     clearModal('deposit')
     userInfo()
     modalSuccess()
-
+    historyDeposit()
 }

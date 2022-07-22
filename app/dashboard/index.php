@@ -18,58 +18,26 @@
                 <button onclick="openTransfer()">Transferir</button>
             </div>
         </div>
-        <div class="content-history">
+        <div container-deposit class="content-history">
             <div class="history-title">
                 <div>Histórico de entrada</div>
             </div>
-            <div class="history">
-                <p>Descrição da opeção</p>
-                <p>20/05/2022 10:24:05</p>
-            </div>
-            <div class="history">
-                <p>Descrição da opeção</p>
-                <p>20/05/2022 10:24:05</p>
-            </div>
         </div>
-        <div class="content-history">
+        <div container-login class="content-history">
             <div class="history-title">
                 <div>Histórico de login</div>
-            </div>
-            <div class="history">
-                <p>Login Realizado</p>
-                <p>20/05/2022 10:24:05</p>
-            </div>
-            <div class="history">
-                <p>Login Realizado</p>
-                <p>20/05/2022 10:24:05</p>
             </div>
         </div>
     </div>
     <div class="dashboard-content">
-        <div class="content-history">
+        <div container-removal class="content-history">
             <div class="history-title">
                 <div>Histórico de saída</div>
             </div>
-            <div class="history">
-                <p>Descrição da opeção</p>
-                <p>20/05/2022 10:24:05</p>
-            </div>
-            <div class="history">
-                <p>Descrição da opeção</p>
-                <p>20/05/2022 10:24:05</p>
-            </div>
         </div>
-        <div class="content-history">
+        <div container-transfer class="content-history">
             <div class="history-title">
                 <div>Histórico de transferencia</div>
-            </div>
-            <div class="history">
-                <p>Descrição da opeção</p>
-                <p>20/05/2022 10:24:05</p>
-            </div>
-            <div class="history">
-                <p>Descrição da opeção</p>
-                <p>20/05/2022 10:24:05</p>
             </div>
         </div>
     </div>

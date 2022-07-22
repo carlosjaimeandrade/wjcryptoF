@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../assets/lib/fontawesome-free-6.1.1-web/css/all.css">
     <script src="../../assets/js/auth.js"></script>
     <script src="../../assets/js/user.js"></script>
+    <script src="../../assets/js/history.js"></script>
     <title>Wjcrypto Login</title>
 </head>
 
