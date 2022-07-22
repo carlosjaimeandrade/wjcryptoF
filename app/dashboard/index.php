@@ -18,29 +18,29 @@
                 <button onclick="openTransfer()">Transferir</button>
             </div>
         </div>
-        <div container-deposit class="content-history">
+        <div container-deposit data-hidden="deposit" class="content-history">
             <div class="history-title">
-                <div>Histórico de entrada</div>
+                <div><span>Histórico de entrada</span> <i class="fa-solid fa-angle-up hidden-history"></i> </div>
             </div>
             <div class="overflow-auto"></div>
         </div>
-        <div container-login class="content-history">
+        <div container-login  data-hidden="login" class="content-history">
             <div class="history-title">
-                <div>Histórico de login</div>
+                <div><span>Histórico de login</span> <i class="fa-solid fa-angle-up hidden-history"></i> </div>
             </div>
             <div class="overflow-auto"></div>
         </div>
     </div>
     <div class="dashboard-content">
-        <div container-removal class="content-history">
+        <div container-removal data-hidden="removal" class="content-history">
             <div class="history-title">
-                <div>Histórico de saída</div>
+                <div><span>Histórico de saída</span> <i class="fa-solid fa-angle-up hidden-history"></i> </div>
             </div>
             <div class="overflow-auto"></div>
         </div>
-        <div container-transfer class="content-history">
+        <div container-transfer data-hidden="transfer" class="content-history">
             <div class="history-title">
-                <div>Histórico de transferencia</div>
+                <div><span>Histórico de transferencia</span> <i class="fa-solid fa-angle-up hidden-history"></i> </div>
             </div>
             <div class="overflow-auto"></div>
         </div>
@@ -104,3 +104,4 @@
 <script src="../../assets/js/deposit.js"></script>
 <script src="../../assets/js/removal.js"></script>
 <script src="../../assets/js/transfer.js"></script>
+<script src="../../assets/js/historyHidden.js"></script>

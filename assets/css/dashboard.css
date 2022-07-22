@@ -109,6 +109,17 @@ body {
     font-size: 16px;
 }
 
+.history-title > div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.history-title > div > i{
+    color: rgba(177, 177, 177, 0.61);
+}
+
 .history {
     display: flex;
     justify-content: space-between;
