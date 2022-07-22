@@ -16,21 +16,21 @@ body {
     border-radius: 4px;
 }
 
-.content-history {
-    width: 350px;
-    height: 350px;
+.overflow-auto{
+    height: 303px;
     overflow: auto;
+    width: 350px;
 }
 
-.content-history::-webkit-scrollbar {
+.overflow-auto::-webkit-scrollbar {
     width: 6px;
 }
 
-.content-history::-webkit-scrollbar-track {
+.overflow-auto::-webkit-scrollbar-track {
     background: rgb(235, 233, 233);
 }
 
-.content-history::-webkit-scrollbar-thumb {
+.overflow-auto::-webkit-scrollbar-thumb {
     background-color: rgba(116, 116, 116, 0.377);
     border-radius: 20px;
 }

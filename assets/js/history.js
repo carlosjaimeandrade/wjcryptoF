@@ -27,7 +27,7 @@ function historyDeposit() {
             </div>`
         })
 
-        deposit.insertAdjacentHTML('beforeend', elements )
+        deposit.children[1].insertAdjacentHTML('beforeend', elements )
     })
 }
 
@@ -60,7 +60,7 @@ function historyLogin() {
             </div>`
         })
 
-        login.insertAdjacentHTML('beforeend', elements )
+        login.children[1].insertAdjacentHTML('beforeend', elements )
     })
 }
 
@@ -93,7 +93,7 @@ function historyRemoval() {
             </div>`
         })
 
-        removal.insertAdjacentHTML('beforeend', elements )
+        removal.children[1].insertAdjacentHTML('beforeend', elements )
     })
 }
 
@@ -126,7 +126,7 @@ function historyTransfer() {
             </div>`
         })
 
-        transfer.insertAdjacentHTML('beforeend', elements )
+        transfer.children[1].insertAdjacentHTML('beforeend', elements )
     })
 }
 historyLogin()
