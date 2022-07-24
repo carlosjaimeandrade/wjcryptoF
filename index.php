@@ -1,3 +1,3 @@
 <?php
 
-echo "teste";
+header('location:' . "/wjcrypto/app/dashboard/");
