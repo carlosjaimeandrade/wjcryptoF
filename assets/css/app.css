@@ -148,6 +148,7 @@
     padding: 8px 0px;
     box-shadow: 0 0 0 0;
     outline: 0;
+    color: rgba(76, 75, 75, 0.812);
 }
 
 .input > select:focus {
@@ -224,3 +225,7 @@
     right: 40px;
     font-size: 30px;
 }
+
+input {
+    color: rgba(76, 75, 75, 0.812);
+  }
